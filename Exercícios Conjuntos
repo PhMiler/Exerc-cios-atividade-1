@@ -1,0 +1,97 @@
+#Exercicios Conjuntos
+#1-
+conjuntox = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+print(conjuntox)
+
+#2-
+conjunto1 = {1, 2, 3, 4, 5}
+conjunto2 = {3, 4 ,5 ,6 ,7}
+
+uniao = conjunto1.union(conjunto2)
+interseccao = conjunto1.intersection(conjunto2)
+diferenca = conjunto1.symmetric_difference(conjunto2)
+
+print("A uniao dos conjuntos é: ", uniao)
+print("A intersecção dos conjuntos é: ", interseccao)
+print("A diferença dos conjuntos é: ", diferenca)
+
+#3
+conjunto3 = {'a', 'e', 'i', 'o', 'u'}
+
+palavra = input("Digite uma palavra")
+
+for i in palavra:
+  if i in conjunto3:
+    print(i)
+
+#4
+conjuntoF1 = {'maça', 'mamao', 'banana', 'morango'}
+conjuntoF2 = {'maça', 'morango', 'kiwi', 'laranja'}
+
+comum = conjuntoF1.intersection(conjuntoF2)
+
+print(comum)
+
+#5
+conjuntoN = {1, 5, 15, -3, 0, 77}
+
+maior = 0
+menor = 0
+
+for i in conjuntoN:
+  if i >= maior:
+    maior = i
+  elif i <= menor:
+    menor = i
+
+print("O maior numero do conjunto é: ", maior)
+print("O menor numero do conjunto é: ", menor)   
+
+#6
+cores = {'vermelho', 'laranja', 'amarelo', 'verde' , 'azul' , 'anil' , 'violeta'}
+
+cor = input("Digite uma cor:")
+
+if cor in cores:
+  print("A cor digitada faz parte do arco-íris")
+else:
+  print('aaaa')
+
+#7
+conjuntoS = {'segunda', 'terça', 'quarta', 'quinta', 'sexta', 'sabado', 'domingo'}
+
+conjuntoS2 = {'segunda', 'terça', 'quarta', 'quinta', 'sexta'}
+
+restante = conjuntoS.difference(conjuntoS2)
+print("O restante do conjunto é: ", restante)
+
+#8
+conjuntoN1 = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 ,17, 18, 19, 20}
+
+conjuntoN2 = {2, 4 , 6, 8, 10}
+
+diferenca = conjuntoN1.difference(conjuntoN2)
+print("A diferença dos conjuntos é: ", diferenca)
+
+#9
+conjuntoNota = {10, 7, 6.4, 2}
+
+for i in conjuntoNota:
+  soma =+ i
+
+media = soma / len(conjuntoNota)
+
+if media >= 7:
+  print("Aprovado!")
+else:
+  print("Reprovado!")
+
+#10
+conjuntoP = {2, 3, 5, 7, 11, 13, 17, 19}
+
+num = input("Digite um numero: ")
+
+if num in conjuntoP:
+  print("O numero digitado é um numero primo no intervalo de 1 a 20")
+else:
+  print("Não é um numero primo no intervalo de 1 a 20")
