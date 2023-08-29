@@ -1,0 +1,74 @@
+#Tuplas
+
+#1
+tuplaNum = (1, 2, 3, 4, 5)
+print(tuplaNum)
+
+#2
+paises = ('Brasil', 'Portugal', 'Mocambique')
+i = 0
+for elemento in paises:
+  i += 1 
+  if i == 2:
+    print(elemento)
+
+#3
+restaurante = ('V_refeição: 15,50' , 'Taxa : 5' , 'Valor total: 20,50')
+print (restaurante)
+
+#4
+Nomes = ('paulo','luis','ramon','arthur','hansei')
+
+num = int(input("Digite u, número entre 1 a 5: "))
+controle = 0
+for elemento in Nomes:
+  controle += 1
+  if num == controle :
+    print(elemento)
+  elif(num >= 6):
+    print("Professor lINDO")
+
+#5
+tuplaNota = (10, 6, 8)
+soma = 0
+for elemento in tuplaNota:
+  soma += elemento
+  
+
+media = soma/3
+
+print(media)
+
+
+#6
+Cor = ('vermelho', 'laranja', 'amarelo', 'verde', 'azul', 'anil', 'violeta')
+
+cor1 = (input("Digite uma cor: "))
+
+if  cor1 in Cor:
+  print("A cor",cor1,"existe no arco-íris")
+else:
+  print("A cor",cor1,"não existe no arco-íris!")
+
+
+#7
+temp = (45, 32, 33, 37, 28, 34, 36)
+
+maior = 0
+menor = 0
+
+for i in temp: 
+  if i >= maior:
+    maior = i
+    menor = i
+  elif i <= menor:
+    menor = i
+
+print("A maior temperatura da semana foi: ", maior)
+print("A menor temperatura da semana foi: ", menor)
+
+#8. Crie uma tupla com os nomes de cinco frutas e suas respectivas cores. Imprima o nome de cada fruta seguido de sua cor.
+
+frutaCor = ('Banana é amarela', 'Maca é vermelha', 'limao é verde', 'morango é vermelho', 'laranja é laranja')
+
+print(frutaCor)
