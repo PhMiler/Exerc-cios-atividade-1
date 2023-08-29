@@ -1,0 +1,94 @@
+#Exercicios Dicionarios
+#1
+dicionario = {}
+
+dicionario['nome'] = 'Luis'
+dicionario['idade'] = '18'
+
+print(dicionario)
+
+#2
+meu_dicionario = {'nome' : '' , 'idade' : '' , 'cidade' : ''}
+
+meu_dicionario['nome'] = input("Digite seu nome: ")
+meu_dicionario['idade'] = input("Digite sua idade: ")
+meu_dicionario['cidade'] = input("Digite sua cidade: ")
+
+print(meu_dicionario)
+
+#3
+dicionarioProd = {'Refri' : '5,00' , 'X-Bacon' : '15,00' , 'Batata-frita' : '10,00'}
+
+print(dicionarioProd)
+
+#4
+dicionarioEstados = {'Paraná' : 'Curitiba' , 'Minas Gerais' : 'Belo Horizonte' , 'Bahia' : 'Salvador'}
+
+estado = input("Digite um dos estados a seguir: Paraná, Minas Gerais, Bahia: ")
+
+if estado in dicionarioEstados:
+  print("A capital do estado selecionado é: ", dicionarioEstados.get(estado))  
+else:
+  print("O Estado não é um dos três solicitados.")
+
+#5
+dicionarioPop = {'Belém' : 1.3 , 'Belo Horizonte' : 2.7 , 'São Paulo' : 12.3 , 'Rio de Janeiro' : 6.7 , 'Curitiba' : 1.7}
+
+maior = 0
+menor = 0
+
+valores = dicionarioPop.values()
+chave = dicionarioPop.keys()
+
+for i in valores:
+  if i >= maior:
+    maior = i
+  elif i <= menor:
+    menor = i
+
+for chave, valor in dicionarioPop.items():
+  if maior == valor:
+    print("O estado com a maior população é: ", chave)
+
+#6
+alimentosCal = {'Carne bovina' : 265 , 'Gorgonzola' : '101' , 'Arroz' : '210'}
+
+alimento = input("Digite um alimento: ")
+
+if alimento in alimentosCal:
+  print("A caloria do alimento é: ", alimentosCal.get(alimento))
+else:
+  print("O alimento nao existe no dicionario")
+
+#7
+animais = {'Golfinho' : 'mamifero' , 'Cobra' : 'reptil' , 'Pombo' : 'ave' , 'Salmao' : 'peixe' , 'Sapo' : 'Anfibio'}
+
+chaves = animais.keys()
+
+for chaves in animais:
+  print("Os animais do dicionario são: ", chaves)
+
+#8
+paises = {'Brasil' : '' , 'Canada' : '' , 'Russia' : '' , 'Inglaterra' : '' , 'Venezuela' : ''}
+
+chaves = paises.keys()
+
+for chaves in paises:
+  print("Os paises do dicionario sao: ", chaves)
+
+#9
+frutas = {'maça' : 'vermelho' , 'melancia' : 'verde' , 'banana' : 'amarelo' , 'kiwi' : 'marrom' , 'laranja' : 'laranja'}
+
+chaves = frutas.keys()
+valores = frutas.values()
+
+for chave, valor in frutas.items():
+  print("Fruta: ", chave, "Cor: ", valor)
+
+#10
+jogos = {'Cod' : 120 , 'LoL' : 10 , 'Sea of Thieves' : 4}
+
+jogo = input("Digite um jogo: ")
+
+if jogo in jogos:
+  print(jogos.get(jogo))
